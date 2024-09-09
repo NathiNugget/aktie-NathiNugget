@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>aktie-NathiNugget</name>
+    </assembly>
+    <members>
+        <member name="T:aktie_NathiNugget.Aktie">
+            <summary>
+            Aktie klasse
+            </summary>
+        </member>
+        <member name="M:aktie_NathiNugget.Aktie.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Konstruktør for klassen, properties initialiseres
+            </summary>
+            <param name="aktieNavn">Navn for aktien</param>
+            <param name="koebskurs">Kurs aktien købes for</param>
+            <param name="salgsKurs">Kurs for salg</param>
+            <param name="antalAktier">Antallet af tilgængelige aktier for denne</param>
+        </member>
+        <member name="P:aktie_NathiNugget.Aktie.AktieNavn">
+            <summary>
+            Navn
+            </summary>
+        </member>
+        <member name="P:aktie_NathiNugget.Aktie.Koebskurs">
+            <summary>
+            Kurs
+            </summary>
+        </member>
+        <member name="P:aktie_NathiNugget.Aktie.SalgsKurs">
+            <summary>
+            Salg
+            </summary>
+        </member>
+        <member name="P:aktie_NathiNugget.Aktie.AntalAktier">
+            <summary>
+            Antal
+            </summary>
+        </member>
+        <member name="M:aktie_NathiNugget.Aktie.Afkast">
+            <summary>
+            Metode som returnerer afkast udregnet via properties
+            
+            </summary>
+            <returns>Afkast i kroner</returns>
+        </member>
+        <member name="T:aktie_NathiNugget.AktieManager">
+            <summary>
+            Klasse der håndterer aktier
+            </summary>
+        </member>
+        <member name="M:aktie_NathiNugget.AktieManager.#ctor">
+            <summary>
+            Konstruktør initialiserer aktier til den statiske liste
+            </summary>
+        </member>
+        <member name="P:aktie_NathiNugget.AktieManager.AktieList">
+            <summary>
+            Statisk liste som indeholder aktier
+            </summary>
+        </member>
+        <member name="M:aktie_NathiNugget.AktieManager.AddAktie(aktie_NathiNugget.Aktie)">
+            <summary>
+            Tilføjer aktie til den statiske liste
+            </summary>
+            <param name="a"></param>
+        </member>
+        <member name="M:aktie_NathiNugget.AktieManager.TotalAfkast">
+            <summary>
+            Metode til at finde total afkast for alle aktier i den statiske liste
+            </summary>
+            <returns>Total afkast i kroner</returns>
+        </member>
+    </members>
+</doc>
